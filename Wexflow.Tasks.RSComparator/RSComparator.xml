@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Tasks>
+  <!--
+    RSComparator is a sequential task that calculate condition for state determination Success (True|False). 
+  -->
+	<Task id="$int" name="RSComparator" description="$string" enabled="true|false">
+	  	<!-- Parametr "indata" defines type input data. Value can be: "mem" or "file"  -->
+		<Setting name="indata" value="mem|false" />
+		<!-- Parametr "cnlnum" defines number channel in RapidScada.
+			Format value must be: "$idsrv.$cnlnum
+				where: $idsrv - id server RapidScada from config file
+					   $cnlnum - channel number in Rapid Scada.
+			Example: "1.201", "3.4"  
+			Can be more one section "cnlnum" -->
+		<Setting name="cnlnum" value="$idsrv.$cnlnum"/>
+		<!-- Parametr "var" defines argument for calculate function.
+			Format value must be: "$varname=$varvalue"
+				where: $varname - name argument. Example: "x1","x100"
+					   $varvalue - value argument. Example: "10", "200.34" 
+					   Can be more one section "var" -->
+		<Setting name="var" value="$varname=$varvalue"/>
+		<!-- Parametr "condition" defines expression for determineted task status 
+			Format value mus be: "$expression"
+				where: $expression - condition expression. Example: "c1_200==c2_300",
+							"x1<>3","((x1+c1_112*0.01)+10)*c2_32>x2","x4<c1_2"
+			Must be only one condition.
+		-->
+		<Setting name="condition" value="$expression"/>
+	</Task>
+</Tasks>

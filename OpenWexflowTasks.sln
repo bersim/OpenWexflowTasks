@@ -1,7 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wexflow.Tasks.Wait", "Wexflow.Tasks.Wait\Wexflow.Tasks.Wait.csproj", "{320AB1BC-6E21-42C9-A74C-969B3CC8D9CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wexflow.Tasks.Wait", "Wexflow.Tasks.Wait\Wexflow.Tasks.Wait.csproj", "{93565F59-6CEB-4968-9DE7-2B459E9C2BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wexflow.Tasks.RSGetCurSrez", "Wexflow.Tasks.RSGetCurSrez\Wexflow.Tasks.RSGetCurSrez.csproj", "{CBB58EB6-26B7-449A-B5F7-197F115DD334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wexflow.Tasks.RSComparator", "Wexflow.Tasks.RSComparator\Wexflow.Tasks.RSComparator.csproj", "{6793DE3E-4303-4E9B-9761-2AE26E9C9CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wexflow.Tasks.RSSendValues", "Wexflow.Tasks.RSSendValues\Wexflow.Tasks.RSSendValues.csproj", "{D5E91713-6FB2-46B3-8F1B-36E99AF38292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wexflow.Tasks.RSSendCmd", "Wexflow.Tasks.RSSendCmd\Wexflow.Tasks.RSSendCmd.csproj", "{7CB6EA7E-F5E4-4677-B3D1-DBF13A05E2B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +17,25 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{320AB1BC-6E21-42C9-A74C-969B3CC8D9CE}.Debug|x86.ActiveCfg = Debug|x86
-		{320AB1BC-6E21-42C9-A74C-969B3CC8D9CE}.Debug|x86.Build.0 = Debug|x86
-		{320AB1BC-6E21-42C9-A74C-969B3CC8D9CE}.Release|x86.ActiveCfg = Release|x86
-		{320AB1BC-6E21-42C9-A74C-969B3CC8D9CE}.Release|x86.Build.0 = Release|x86
+		{6793DE3E-4303-4E9B-9761-2AE26E9C9CE5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6793DE3E-4303-4E9B-9761-2AE26E9C9CE5}.Debug|x86.Build.0 = Debug|Any CPU
+		{6793DE3E-4303-4E9B-9761-2AE26E9C9CE5}.Release|x86.ActiveCfg = Release|Any CPU
+		{6793DE3E-4303-4E9B-9761-2AE26E9C9CE5}.Release|x86.Build.0 = Release|Any CPU
+		{7CB6EA7E-F5E4-4677-B3D1-DBF13A05E2B1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CB6EA7E-F5E4-4677-B3D1-DBF13A05E2B1}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CB6EA7E-F5E4-4677-B3D1-DBF13A05E2B1}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CB6EA7E-F5E4-4677-B3D1-DBF13A05E2B1}.Release|x86.Build.0 = Release|Any CPU
+		{93565F59-6CEB-4968-9DE7-2B459E9C2BB2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{93565F59-6CEB-4968-9DE7-2B459E9C2BB2}.Debug|x86.Build.0 = Debug|Any CPU
+		{93565F59-6CEB-4968-9DE7-2B459E9C2BB2}.Release|x86.ActiveCfg = Release|Any CPU
+		{93565F59-6CEB-4968-9DE7-2B459E9C2BB2}.Release|x86.Build.0 = Release|Any CPU
+		{CBB58EB6-26B7-449A-B5F7-197F115DD334}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CBB58EB6-26B7-449A-B5F7-197F115DD334}.Debug|x86.Build.0 = Debug|Any CPU
+		{CBB58EB6-26B7-449A-B5F7-197F115DD334}.Release|x86.ActiveCfg = Release|Any CPU
+		{CBB58EB6-26B7-449A-B5F7-197F115DD334}.Release|x86.Build.0 = Release|Any CPU
+		{D5E91713-6FB2-46B3-8F1B-36E99AF38292}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D5E91713-6FB2-46B3-8F1B-36E99AF38292}.Debug|x86.Build.0 = Debug|Any CPU
+		{D5E91713-6FB2-46B3-8F1B-36E99AF38292}.Release|x86.ActiveCfg = Release|Any CPU
+		{D5E91713-6FB2-46B3-8F1B-36E99AF38292}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

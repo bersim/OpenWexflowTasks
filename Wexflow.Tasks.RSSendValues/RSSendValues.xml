@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Tasks>
+  <!--
+    RSSendValues is a sequential task that sending values on RapidScada. 
+  -->
+  <Task id="$int" name="RSSendValues" description="$string" enabled="true|false">
+  	<!-- Parametr "indata" defines type input data. Value can be: "mem" or "file"  -->
+	<Setting name="indata" value="mem|false" />
+	<!-- Parametr "cnlnum" defines number channel in RapidScada.
+		Format value must be: "$idsrv.$cnlnum
+			where: $idsrv - id server RapidScada from config file
+				   $cnlnum - channel number in Rapid Scada.
+		Example: "1.201", "3.4"  
+		Can be more one section "cnlnum" -->
+	<Setting name="cnlnum" value="$idsrv.$cnlnum"/>
+	<!-- Parametr "var" defines argument for calculate function.
+		Format value must be: "$varname=$varvalue"
+			where: $varname - name argument. Example: "x1","x100"
+				   $varvalue - value argument. Example: "10", "200.34" 
+				   Can be more one section "var" -->
+	<Setting name="var" value="$varname=$varvalue"/>
+	<!-- Parametr "sendValue" defines formula for calculate function.
+		 Calculated result value sending in RapidScada. 
+		 Format formula must be: "$varname=$formula"
+			where: $varname - argument name for value calculate.
+							Must be view: "c$idsrv_$cnlnum"
+								where: $idsrv - id server RapidScada from config file
+				   					   $cnlnum - channel number in Rapid Scada.
+							Example: "c1_100","c3_115"
+				   $formula - expression for calculate" 
+				   			Example: "x1+x200+c3_200","(x10+c1_23*100)+23*(0.123+c4_25)"
+				   	WARNING: Arguments that are defined in the sections "cnlnum" and "var"
+				   	Can be more one section "sendValue"
+				   -->
+	<Setting name="sendValue" value="$varname=$formula" />
+	</Task>
+</Tasks>
+
